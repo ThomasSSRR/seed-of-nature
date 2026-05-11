@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { AXIS_META } from "../data/framework";
 
-const ANTHROPIC_API_URL = "https://cors-anywhere.herokuapp.com/https://api.anthropic.com/v1/messages";
+const ANTHROPIC_API_URL = "/api/claude";
 
 async function getCoherenceInsight(currentNode, currentAnswer, allAnswers, allNodes) {
   const previousAnswers = allNodes
