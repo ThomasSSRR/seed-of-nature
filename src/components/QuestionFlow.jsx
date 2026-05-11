@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { AXIS_META } from "../data/framework";
 
-const ANTHROPIC_API_URL = "/api/claude";
+const ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages";
 
 async function getCoherenceInsight(currentNode, currentAnswer, allAnswers, allNodes) {
   const previousAnswers = allNodes
@@ -33,10 +33,11 @@ Your task: In 2-3 sentences maximum, surface ONE meaningful connection or tensio
   try {
     const response = await fetch(ANTHROPIC_API_URL, {
       method: "POST",
-      headers: {
+   headers: {
   "Content-Type": "application/json",
-  "x-api-key": import.meta.env.VITE_ANTHROPIC_API_KEY,
-  "anthropic-version": "2023-06-01"
+"x-api-key": import.meta.env.VITE_ANTHROPIC_API_KEY,
+  "anthropic-version": "2023-06-01",
+  "anthropic-dangerous-direct-browser-access": "true"
 },
       body: JSON.stringify({
         model: "claude-sonnet-4-20250514",
