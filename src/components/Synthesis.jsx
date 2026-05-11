@@ -43,7 +43,7 @@ Write in second person ("you"). Be direct. Be precise. No platitudes. No generic
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-opus-4-5",
       max_tokens: 1000,
       messages: [{ role: "user", content: prompt }]
     })
@@ -94,7 +94,7 @@ Be completely specific to their actual answers. No generic productivity advice.`
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-opus-4-5",
       max_tokens: 1000,
       messages: [{ role: "user", content: prompt }]
     })

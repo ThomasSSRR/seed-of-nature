@@ -37,7 +37,7 @@ Your task: In 2-3 sentences maximum, surface ONE meaningful connection or tensio
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-opus-4-5",
         max_tokens: 1000,
         messages: [{ role: "user", content: prompt }]
       })
