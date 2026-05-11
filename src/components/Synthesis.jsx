@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AXIS_META } from "../data/framework";
 
-const ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages";
+const ANTHROPIC_API_URL = "/api/claude";
 
 async function generateSynthesis(answers, nodes) {
   const allAnswers = nodes

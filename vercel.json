@@ -1,1 +1,9 @@
-{}
+{
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/claude.mjs": {
+      "runtime": "@vercel/node@3.2.7"
+    }
+  }
+}
