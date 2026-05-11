@@ -1,6 +1,11 @@
 {
+  "functions": {
+    "api/claude.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/api/claude", "destination": "/api/claude" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
